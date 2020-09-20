@@ -1,1 +1,46 @@
-Nome File - Descrizione
+DATASET DIRECTORY STRUCTURE
+
+    Dataset
+    ├── <datasetName>
+    |   ├── Input
+    |   |   ├── weigthedGraph.txt
+    |   |   ├── unweightedGraph.txt
+    |   |   ├── similarityFile.txt
+    |   ├── Output  
+    |   |   ├── weigthedGraph.gz2
+    |   |   ├── unweightedGraph.gz2
+    |   |   ├── alignmentGraph.gz2
+    |   |   ├── dcs.gz2
+
+USAGE
+
+    1) Create in "Dataset" directory a folder with the name of dataset to analize <datasetName>
+     and add two directory "Input" and "Output":
+
+    2) Put in folder the text files:
+        - Weighted Graph -> weigthedGraph.txt
+        - Unweighted Graph -> unweightedGraph.txt
+        - Similarity relationship file among dual networks nodes -> similarityFile.txt
+    3) In Main.py
+        - Modify datesetNameFolder with the name of the folder containing the dataset to be analyzed;
+    4) Run Main.py
+
+DATESET 
+
+    1) DBLP: 
+        A dual network representing authors and the similarity of the activity of their research.        
+        (The dblp team: dblp computer science bibliography. Monthly snapshot release of November 2019.
+        [Online].Available: https://dblp.org/xml/release/dblp-2019-11-01.xml.gz)
+    
+    2) GOWALLA:
+        GoWalla is a social network where users share their locations (expressed as GPS coordinates) 
+        by checking-in into the web-site.
+        (J. Leskovec and A. Krevl. (Jun. 2014). SNAP Datasets: Stanford Large Network Dataset Collection.
+         [Online].Available: http://snap.stanford.edu/data)
+
+    3) STRING:
+        This database contains data about proteins and their interactions.
+        (D. Szklarczyk, J. H. Morris, H. Cook, M. Kuhn, S. Wyder, M. Simonovic, A. Santos, N. T. Doncheva, 
+        A. Roth, P. Bork, and L. J. Jensen, "The STRING database in 2017: Quality-controlled protein-protein association
+        networks, made broadly accessible." Nucleic Acids Res., Oct. 2016, Art. no. gkw937
+        [Online].Available: https://string-db.org/cgi/download.pl)
